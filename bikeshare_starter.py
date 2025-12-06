@@ -1,3 +1,5 @@
+# This script analyzes bikeshare data and prints useful statistics.
+
 import time
 import pandas as pd
 import numpy as np
@@ -6,6 +8,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+# Ask the user to choose filters for city, month, and day.
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -98,7 +101,7 @@ def trip_duration_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+# Display statistics based on the selected filters.
 def user_stats(df):
     """Displays statistics on bikeshare users."""
 
@@ -119,6 +122,7 @@ def user_stats(df):
 
 
 def main():
+    """Run the bikeshare interactive analysis program."""
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
