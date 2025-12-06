@@ -1,27 +1,27 @@
->**Note**: Please **fork** this Udacity repository so you have a **remote** repository in **your** GitHub account. Then you can clone the remote repository to your local machine. Later, as a part of the project, you will push your changes to the remote repository in your GitHub account.
+# Bikeshare Project
 
+This project explores bikeshare data using Python.  
+The script loads data from a CSV file and allows the user to:
 
-# Project Title
+- Filter the data by month and/or day
+- See statistics about travel times
+- See statistics about stations and trips
+- See statistics about trip duration
+- See statistics about users
 
-Describe what your project is about and what it does
+## Files in this repository
 
-## Information about how to use your project
+- `bikeshare_starter.py` – main Python script that runs the bikeshare analysis.
+- `new_york_city.csv` – example data file used by the script (not tracked on GitHub because it is ignored by `.gitignore`).
+- `.gitignore` – tells Git to ignore CSV files.
+- `README.md` – project documentation (this file).
 
-This could include:
+## How to run the project
 
-- Step-by-step instructions for installing or setting up your project.
-- Any software dependencies that need to be installed.
-- Instructions and examples for how to use your project, including any helpful code snippets.
-- Common issues and troubleshooting tips
+1. Make sure Python is installed on your computer.
+2. Place the CSV data file in the same folder as `bikeshare_starter.py`.
+3. Open a terminal (or Command Prompt) in this folder.
+4. Run:
 
-## Contribution guidelines
-
-If you welcome contributions, provide guidelines on how others can contribute to your project.
-
-## Credits
-
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
-## Date created
-
-Include the date you created this project and README file.
+```bash
+python bikeshare_starter.py
