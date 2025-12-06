@@ -1,3 +1,5 @@
+# This script analyzes bikeshare data and prints useful statistics.
+
 import time
 import pandas as pd
 import numpy as np
